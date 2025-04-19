@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+* {
+    font-family: "Geist Mono", monospace;
+}
+
+.container {
+    margin: 2rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    width: 50%;
+    left: 20%;
+    right: 0%;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.modal h1 {
+    margin: 15px;
+}
+
+.modal button {
+    background-color: oklch(58.5% 0.233 277.117);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+.modal button:active {
+    background-color:oklch(51.1% 0.262 276.966) ;
+}
+
+.modal input, .modal textarea, .note-card input, .note-card textarea{
+    padding: 10px 15px;
+}
+
+.note-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.note-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: transform 0.5s ease;
+}
+
+.note-card p {
+    margin: 0px;
+}
+
+
+.date {
+    text-align: end;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 10px 15px;
+    border: 1px solid;
+}
+
+.edit {
+    background-color: oklch(68.5% 0.169 237.323);
+    color: white;
+}
+
+.edit:active {
+    background-color: oklch(58.8% 0.158 241.966);
+}
+
+
+.delete {
+    background-color: oklch(63.7% 0.237 25.331);
+    color: white;
+}
+
+.delete:active {
+    background-color: oklch(57.7% 0.245 27.325);
+}
+
+.text-date-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.text-date-cont textarea {
+    width: 97.5%;
+}
+
+
+
+.add-Button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+    z-index: 1000;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: oklch(58.5% 0.233 277.117);
+    color: white;
+}
