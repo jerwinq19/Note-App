@@ -67,7 +67,7 @@ const NoteBody = () => {
 
                     </textarea>
 
-                    <button onClick={AddNotes}>Add</button>
+                    <button onClick={Tinput && Input ? AddNotes : () => setModal(false)}>{Tinput && Input ? "Add" : "Close"}</button>
                 </div>
             ): (
                 null
@@ -76,8 +76,9 @@ const NoteBody = () => {
             {Notes.length === 0 ? (
                 <div className="note-card-container">
                     <h1>Your Notes here</h1>
-
-                    <p>No available notes... Please add.</p>
+                    <div className="note-card">
+                        <h2>No available notes... Please add one.</h2>
+                    </div>
 
                 </div>
             ) : (

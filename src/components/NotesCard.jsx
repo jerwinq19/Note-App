@@ -30,14 +30,16 @@ const NoteCard = ({title, body, date, idx, saveNotes}) => {
         const data = AccessData("Notes")
         
         data[idx] = {
-            title: Input,
-            body: Tinput,
+            title: !Input ? data[idx].title : Input,
+            body: !Tinput ? data[idx].body : Tinput,
             date: data[idx].date
         }
 
         if (data[idx].title === "" && data[idx].body === "") return;
 
         localStorage.setItem("Notes", JSON.stringify(data));
+        SetInput("")
+        SetTinput("")
         saveNotes(data);
     }
 
